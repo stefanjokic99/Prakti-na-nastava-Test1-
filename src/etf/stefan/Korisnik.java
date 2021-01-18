@@ -72,7 +72,7 @@ public class Korisnik implements iKorisnik {
 		
 		for (Uredjaj uredjaj : prodavnica.getUredjaji()) {
 			if(uredjaj.getTipUredjaja() == tipUredjaja)	{
-				System.out.println(++rbrUredjaja + uredjaj.toString());
+				System.out.println(++rbrUredjaja + ". " + uredjaj.toString());
 			}
 		}
 		System.out.print("Izaberite uredjaj: ");
@@ -96,8 +96,8 @@ public class Korisnik implements iKorisnik {
 			}
 		}
 		
-		System.out.println("Uredjaj kupljen");
-		sc.close();
+		System.out.println("Uredjaj kupljen!!!");
+		//sc.close();
 	}
 	@Override
 	public void PredajServiseru(Serviser serviser) {
@@ -109,7 +109,7 @@ public class Korisnik implements iKorisnik {
 		
 		for (Uredjaj uredjaj : uredjaji) {
 			if(uredjaj.getStanjeUredjaja() == StanjeUredjaja.POKVAREN)	{
-				System.out.println(++rbrUredjaja + uredjaj.toString());
+				System.out.println(++rbrUredjaja + ". " + uredjaj.toString());
 			}
 		}
 		System.out.print("Izaberite uredjaj: ");
@@ -131,8 +131,8 @@ public class Korisnik implements iKorisnik {
 			}
 		}
 		
-		System.out.println("Uredjaj poslat na servisiranje...");
-		sc.close();
+		System.out.println("Uredjaj poslat na servisiranje!!!");
+		//sc.close();
 		
 	}
 	
